@@ -1,0 +1,97 @@
+/* global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #DDD;
+}
+/* global styles */
+
+/* first_section styles */
+.main_page .first_section {
+    margin: 50px auto;
+    text-align: center;
+}
+
+.main_page .first_section .calc_form {
+    width: 320px;
+    margin: auto;
+}
+
+.main_page .first_section .calc_form .input_group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main_page .first_section .calc_form .input_group label {
+    color: blue;
+}
+
+.main_page .first_section .calc_form .input_group input {
+    padding: 4px;
+}
+/* first_section styles */
+
+/* second_section styles */
+.main_page .second_section {
+    text-align: center;
+}
+
+.main_page .second_section h3 {
+    color: gray;
+}
+
+.main_page .second_section .brands {
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+    width: 400px;
+    margin-top: 20px;
+}
+
+.main_page .second_section .brands .brand_name button:hover {
+    transform: scale(1.1);
+}
+
+.main_page .second_section .brands .brand_name button {
+    width: 120px;
+    height: 70px;
+    cursor: pointer;
+}
+
+.main_page .second_section .brands .brand_name button.active {
+    transform: scale(1.1);
+    border: 1px solid red;
+}
+
+.main_page .second_section .brands .brand_name button img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main_page .second_section .rewards {
+    margin-top: 20px;
+    color: gray;
+}
+
+.main_page .second_section .rewards .brex_business_card,
+.main_page .second_section .rewards .stripe_business_card,
+.main_page .second_section .rewards .amex_business_card {
+    display: none;
+}
+
+.main_page .second_section .rewards .brex_business_card.active,
+.main_page .second_section .rewards .stripe_business_card.active,
+.main_page .second_section .rewards .amex_business_card.active {
+    display: block;
+}
+
+.main_page .second_section .rewards span {
+    color: red;
+}
+/* second_section styles */

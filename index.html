@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <main class="main_page">
+        <section class="first_section">
+            <form class="calc_form">
+                <div class="input_group">
+                    <label for="vendor">Vendor/Bills</label>
+                    <input type="number" id="vendor" placeholder="Enter a number">
+                </div>
+                <br>
+
+                <div class="input_group">
+                    <label for="media">Media/Ad Spend</label>
+                    <input type="number" id="media" placeholder="Enter a number">
+                </div>
+                <br>
+
+                <div class="input_group">
+                    <label for="corp">Corp. Spend</label>
+                    <input type="number" id="corp" placeholder="Enter a number">
+                </div>
+                <br>
+
+                <div class="input_group">
+                    <label for="team">Team Project</label>
+                    <input type="number" id="team" placeholder="Enter a number">
+                </div>
+                <br>
+            </form>
+        </section>
+
+        <section class="second_section">
+            <div>
+                <h3>Compare your rewards</h3>
+                <div class="brands">
+                    <div class="brand_name">
+                        <button id="brex_btn">
+                            <img src="./images/brex.jpg" alt="brex">
+                        </button>
+                    </div>
+
+                    <div class="brand_name">
+                        <button id="stripe_btn">
+                            <img src="./images/stripe.png" alt="stripe">
+                        </button>
+                    </div>
+
+                    <div class="brand_name">
+                        <button id="amex_btn">
+                            <img src="./images/amex.jpg" alt="amex">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="rewards">
+                    <p id="brex_business_card" class="brex_business_card">Brex Business Card: <span id="brex_total"></span></p>
+                    <p id="stripe_business_card" class="stripe_business_card">Stripe Business Card: <span id="stripe_total"></span></p>
+                    <p id="amex_business_card" class="amex_business_card">Amex Business Card: <span id="amex_total"></span></p>
+                    <p>Unlimited Rewards: <span id="unlimited_rewards"></span></p>
+                    <p>Lifetime Rewards: <span id="lifetime_rewards"></span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
